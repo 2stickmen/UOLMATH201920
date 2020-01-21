@@ -37,10 +37,3 @@ for i in envs:
             outfile.write('\n')
 
         
-#def LenOrder(inList):
-#    ordList = inList.copy()
-#    ordList.sort()
-#    outList = []
-#    for i in ordList:
-#        outList.append(inList.index(i))
-#    return outList
