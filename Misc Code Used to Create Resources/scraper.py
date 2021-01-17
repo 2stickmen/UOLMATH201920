@@ -4,6 +4,8 @@ lines = file.readlines()
 for line in lines:
     if line == '\n':
         lines.remove('\n')
+    if line.startswith("%"):
+        lines.remove(line)
 
 def envfinder(envname):
     env_beg = []
@@ -37,3 +39,10 @@ for i in envs:
             outfile.write('\n')
 
         
+#def LenOrder(inList):
+#    ordList = inList.copy()
+#    ordList.sort()
+#    outList = []
+#    for i in ordList:
+#        outList.append(inList.index(i))
+#    return outList
